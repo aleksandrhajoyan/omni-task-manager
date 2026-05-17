@@ -7,7 +7,7 @@ from openai import OpenAI
 import urllib.request
 import json
 
-# ВОЗВРАЩАЕМ ИМПОРТЫ С ПРЕФИКСОМ backend.
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from backend.app.database import Base
@@ -15,7 +15,7 @@ from backend.app.models import Task
 
 logger = logging.getLogger(__name__)
 
-# ... остальной код оставляем как есть
+
 
 REDIS_URL = os.getenv("REDIS_URL", "redis://redis_broker:6379/0")
 # ... дальше весь твой остальной код без изменений
